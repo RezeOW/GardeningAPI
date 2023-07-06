@@ -140,9 +140,12 @@ void WaterControl(){
 // Read all Sensors into Memory
 void ReadSensor(){
   V1 = ValueMapping(analogRead(Sensor1));
+  Serial.println(V1);
   V2 = ValueMapping(analogRead(Sensor2));
+  Serial.println(V1);
   V3 = ValueMapping(analogRead(Sensor3));
-
+  Serial.println(V1);
+  
   pref.putInt("V1", V1);
   pref.putInt("V2", V2);
   pref.putInt("V3", V3);
